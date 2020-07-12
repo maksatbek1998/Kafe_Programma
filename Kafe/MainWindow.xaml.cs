@@ -30,7 +30,7 @@ namespace Kafe
         {
             InitializeComponent();
         }
-        public MySqlConnection connection = new MySqlConnection("datasource=192.168.0.100; port=3306;Initial Catalog='u_system';username=Maksatbek;password=708141998m;CharSet=utf8;");
+        public MySqlConnection connection = new MySqlConnection("datasource=192.168.0.101; port=3306;Initial Catalog='u_system';username=Maksatbek;password=708141998m;CharSet=utf8;");
         private void Stol_Button_Click(object sender, RoutedEventArgs e)
         {
             Popup_US.PlacementTarget = Stol_Button;
@@ -133,9 +133,26 @@ namespace Kafe
             parol_Window.Show();
         }
 
-        private void Net_Button_Click(object sender, RoutedEventArgs e)
+        private void dataGridView1_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            Popup_US.IsOpen = false;
+            try
+            {
+                DataGrid dt = sender as DataGrid;
+                DataRowView selection = dt.SelectedItem as DataRowView;
+                if (dataGridView1.SelectedItem != null)
+                {
+                    if (selection["kurs"].ToString()!=null || selection["data"].ToString() != null)
+                    {
+                        MessageBox.Show("Maksat");
+                    }
+                    
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }

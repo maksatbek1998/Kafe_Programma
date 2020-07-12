@@ -61,7 +61,7 @@
                   AutoGenerateColumns="False"
                   IsReadOnly="True"
                   CanUserResizeColumns="False"
-                  x:Name="dataGridView1" >
+                  x:Name="dataGridView1" SelectionChanged="dataGridView1_SelectionChanged" >
                     <DataGrid.Columns>
                         <DataGridTextColumn Header="Наименование" Binding="{Binding marka}" Width="250" FontSize="15" Foreground="Black"/>
                         <DataGridTextColumn Header="Кол-во" Binding="{Binding kurs}" Width="50" FontSize="15" Foreground="Black"/>
@@ -139,7 +139,7 @@
         <Popup x:Name="Popup_US" AllowsTransparency="True" VerticalOffset="-30" HorizontalOffset="-90">
             <Grid>
                 <local:User_Window_Menu x:Name="Header"/>
-                <Button x:Name="Net_Button" Style="{DynamicResource Menu_Button}" Content="Нет не этот раз" Margin="10,130,10,10" Click="Net_Button_Click"/>
+                <Button x:Name="Net_Button" Style="{DynamicResource Menu_Button}" Content="Нет не этот раз" Margin="10,130,10,10" Click="Stol_Button_Click"/>
             </Grid>
         </Popup>
         <Popup x:Name="Popup_Check" AllowsTransparency="True" VerticalOffset="-30" HorizontalOffset="0">

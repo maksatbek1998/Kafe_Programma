@@ -47,3 +47,5 @@ D:\Кафе программа\Kafe\Kafe\obj\Debug\All_Windows\Calendar_Window.g
 D:\Кафе программа\Kafe\Kafe\obj\Debug\All_Windows\Calendar_Window.baml
 D:\Кафе программа\Kafe\Kafe\obj\Debug\All_Windows\Chasy.g.cs
 D:\Кафе программа\Kafe\Kafe\obj\Debug\All_Windows\Chasy.baml
+D:\Кафе программа\Kafe\Kafe\obj\Debug\All_Windows\Kolichestvo_Bluda.g.cs
+D:\Кафе программа\Kafe\Kafe\obj\Debug\All_Windows\Kolichestvo_Bluda.baml
