@@ -48,7 +48,32 @@
                 <Grid.Background>
                     <ImageBrush ImageSource="Images/Icon/Фон.tif"/>
                 </Grid.Background>
-
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <StackPanel  Orientation="Horizontal" x:Name="KategoryMenu" Grid.Row="0" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Height="45" Grid.Column="0">
+                            <Button x:Name="Vse_Tovar" VerticalAlignment="Center" Height="42" HorizontalAlignment="Left" Width="130.5" Margin="25,0"   Style="{DynamicResource Button_Kategory}" Click="Vse_Tovar_Click"/>
+                            <!--Тамактын аты-->
+                            <Button Visibility="Visible" VerticalAlignment="Center" Height="42" HorizontalAlignment="Left"   Style="{DynamicResource Button_Kategory1}" Content="Батончик Mars во фритюре"/>
+                        </StackPanel>
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <ScrollViewer  CanContentScroll="False"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" VerticalScrollBarVisibility="Hidden">
+                            <WrapPanel x:Name="TovarMenu"   VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="15,0,15,0" >
+                                <!--<Grid   Margin="10,10" Height="155" >
+                                    <Image Height="155" Width="200" Source="Images/FoodImage/se.png" Stretch="UniformToFill" VerticalAlignment="Top"/>
+                                    <StackPanel Background="White" Height="Auto" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Orientation="Horizontal">
+                                        <TextBlock  FontSize="20"  Margin="0,5,0,5" VerticalAlignment="Bottom" FontWeight="UltraBold"  HorizontalAlignment="Left" TextAlignment="Center" TextWrapping="Wrap" Width="200" 
+                                                    Text="Суп с тушенкой" ></TextBlock>
+                                    </StackPanel>
+                                </Grid>-->
+                            </WrapPanel>
+                        </ScrollViewer>
+                    </Grid>
+                </Grid>
             </Grid>
             <!--Тамактар тизмеси чыкчу панел-->
             <Grid Grid.Row="1" Grid.Column="1" Background="White">
@@ -129,10 +154,8 @@
                                 </Button>
                             </Grid>
                             <Button x:Name="Button_Oplatit" Style="{DynamicResource Button_Yellow}" Height="80" FontSize="23" Width="190" Margin="7,0,100,0" VerticalAlignment="Center" HorizontalAlignment="Right" Content="Оплатить" Click="Button_Oplatit_Click"/>
-
                         </StackPanel>
                     </Grid>
-
                 </StackPanel>
             </Grid>
         </Grid>

@@ -143,7 +143,8 @@ namespace Kafe
                 {
                     if (selection["kurs"].ToString()!=null || selection["data"].ToString() != null)
                     {
-                        MessageBox.Show("Maksat");
+                        Kolichestvo_Bluda kolichestvo_Bluda = new Kolichestvo_Bluda();
+                        kolichestvo_Bluda.ShowDialog();
                     }
                     
                 }
@@ -152,6 +153,67 @@ namespace Kafe
             {
 
                 throw;
+            }
+        }
+
+        private void Vse_Tovar_Click(object sender, RoutedEventArgs e)
+        {
+            TovarMenu.Children.Clear();
+            for (int i = 0; i < 50; i++)
+            {
+                Grid grid = new Grid();
+                grid.Margin = new Thickness(10, 10, 0, 35);
+                grid.Height = 155;
+                grid.Width = double.NaN;
+
+                Image im = new Image();
+                im.MouseDown +=new MouseButtonEventHandler(image_MouseDown);
+                im.Style = (Style)this.TryFindResource("Image_Style");
+                im.Source = new BitmapImage(new Uri("Images/FoodImage/se.png",UriKind.RelativeOrAbsolute));
+
+                StackPanel st = new StackPanel();
+                st.Style= (Style)this.TryFindResource("StackPanel_Style");
+
+                TextBlock text1 = new TextBlock();
+                text1.Style= (Style)this.TryFindResource("TextBlock_Style");
+                text1.Text = "Суп с тушенкой";
+                grid.Children.Add(im);
+                st.Children.Add(text1);
+                grid.Children.Add(st);
+                TovarMenu.Children.Add(grid);
+            }         
+
+        }
+        private void image_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            TovarMenu.Children.Clear();
+            for (int i = 0; i < 6; i++)
+            {
+                Grid grid = new Grid();
+                grid.Margin = new Thickness(10, 10, 0, 35);
+                grid.Height = 155;
+                grid.Width = double.NaN;
+
+                Image im = new Image();
+                //im.MouseDown += RoutedEvent();
+                im.Style = (Style)this.TryFindResource("Image_Style");
+                im.Source = new BitmapImage(new Uri("Images/FoodImage/fg.jpg", UriKind.RelativeOrAbsolute));
+
+                StackPanel st = new StackPanel();
+                st.Style = (Style)this.TryFindResource("StackPanel_Style");
+
+                TextBlock text1 = new TextBlock();
+                text1.Style = (Style)this.TryFindResource("TextBlock_Style_Tamak");
+                text1.Text = "Суп с тушенкой";
+
+                TextBlock text2 = new TextBlock();
+                text2.Style = (Style)this.TryFindResource("TextBlock_Style_Tamak_Sena");
+                text2.Text = "5000 Сом";
+                grid.Children.Add(im);
+                st.Children.Add(text1);
+                st.Children.Add(text2);
+                grid.Children.Add(st);
+                TovarMenu.Children.Add(grid);
             }
         }
     }

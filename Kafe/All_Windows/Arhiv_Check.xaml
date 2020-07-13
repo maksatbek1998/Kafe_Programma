@@ -156,6 +156,7 @@
                     <Image VerticalAlignment="Center" HorizontalAlignment="Center" Source="pack://application:,,,/Images/Icon/Close1.png" Height="60" Width="60" ></Image>
                 </StackPanel>
             </Button>
+            <Button x:Name="Otpravka_Kuxne_Copy" Style="{DynamicResource Button_Yellow}" Content="Настроить дата" FontSize="17" Height="30" Width="200" HorizontalAlignment="Right" Margin="0,-55,70,515" Click="Otpravka_Kuxne_Copy_Click"/>
         </Grid>
     </Grid>
 </Window>

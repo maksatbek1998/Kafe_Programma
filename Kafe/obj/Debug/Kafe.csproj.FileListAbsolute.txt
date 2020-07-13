@@ -1,4 +1,3 @@
-D:\Кафе программа\Kafe\Kafe\obj\Debug\Kafe.csprojAssemblyReference.cache
 D:\Кафе программа\Kafe\Kafe\obj\Debug\All_Windows\Parol_Window.g.cs
 D:\Кафе программа\Kafe\Kafe\obj\Debug\All_Windows\Stol_Window.g.cs
 D:\Кафе программа\Kafe\Kafe\obj\Debug\MainWindow.g.cs
@@ -49,3 +48,4 @@ D:\Кафе программа\Kafe\Kafe\obj\Debug\All_Windows\Chasy.g.cs
 D:\Кафе программа\Kafe\Kafe\obj\Debug\All_Windows\Chasy.baml
 D:\Кафе программа\Kafe\Kafe\obj\Debug\All_Windows\Kolichestvo_Bluda.g.cs
 D:\Кафе программа\Kafe\Kafe\obj\Debug\All_Windows\Kolichestvo_Bluda.baml
+D:\Кафе программа\Kafe\Kafe\obj\Debug\Kafe.csprojAssemblyReference.cache
