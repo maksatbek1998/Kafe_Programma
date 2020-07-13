@@ -28,5 +28,11 @@ namespace Kafe.All_Windows
         {
             this.Close();
         }
+
+        private void Otpravka_Kuxne_Copy_Click(object sender, RoutedEventArgs e)
+        {
+            Chasy chasy = new Chasy();
+            chasy.ShowDialog();
+        }
     }
 }

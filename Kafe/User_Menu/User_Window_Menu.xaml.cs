@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Kafe.All_Windows;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,9 +26,10 @@ namespace Kafe.User_Menu
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-       
+            Stol_Window stol_Window = new Stol_Window();
+            stol_Window.ShowDialog();
         }
     }
 }

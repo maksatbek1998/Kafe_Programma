@@ -29,5 +29,22 @@ namespace Kafe.All_Windows
             Parol_Window parol_Window = new Parol_Window();
             parol_Window.Show();
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                Grid grid1 = new Grid();
+                TextBlock textBlock = new TextBlock();
+                textBlock.Style= (Style)this.TryFindResource("Stol_Button_Text");
+                textBlock.Text = "Пустой";
+                Button button = new Button();
+                button.Style = (Style)this.TryFindResource("Button_Dynamik_Stol");
+                button.Content = i.ToString();
+                grid1.Children.Add(button);
+                grid1.Children.Add(textBlock);
+                Stol_Panel.Children.Add(grid1);
+            }
+        }
     }
 }

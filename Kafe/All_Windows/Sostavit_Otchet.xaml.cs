@@ -31,8 +31,8 @@ namespace Kafe.All_Windows
 
         private void TextBox_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            Calendar_Window calendar_Window = new Calendar_Window();
-            calendar_Window.ShowDialog();
+            Chasy chasy = new Chasy();
+            chasy.ShowDialog();
         }
     }
 }

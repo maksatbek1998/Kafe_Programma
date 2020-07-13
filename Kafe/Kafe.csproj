@@ -71,6 +71,9 @@
     <Compile Include="All_Windows\Klaviatura.xaml.cs">
       <DependentUpon>Klaviatura.xaml</DependentUpon>
     </Compile>
+    <Compile Include="All_Windows\Kolichestvo_Bluda.xaml.cs">
+      <DependentUpon>Kolichestvo_Bluda.xaml</DependentUpon>
+    </Compile>
     <Compile Include="All_Windows\Razdelit_Window.xaml.cs">
       <DependentUpon>Razdelit_Window.xaml</DependentUpon>
     </Compile>
@@ -111,6 +114,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="All_Windows\Klaviatura.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="All_Windows\Kolichestvo_Bluda.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -262,6 +269,26 @@
   <ItemGroup>
     <Resource Include="Images\Icon\Down.png" />
     <Resource Include="Images\Icon\Up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icon\Down1.png" />
+    <Resource Include="Images\Icon\Up1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icon\Minus.png" />
+    <Resource Include="Images\Icon\Minus1.png" />
+    <Resource Include="Images\Icon\Plus.png" />
+    <Resource Include="Images\Icon\Plus1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icon\Stoll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\FoodImage\fg.jpg" />
+    <Resource Include="Images\FoodImage\se.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Icon\Kategory.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
