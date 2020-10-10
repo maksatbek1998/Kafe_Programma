@@ -89,17 +89,17 @@ namespace Kafe
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            string s = "SELECT marka,kurs,data FROM cars";
-            connection.Open();
-            MySqlCommand cmd = connection.CreateCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = s;
-            cmd.ExecuteNonQuery();
-            DataTable dta1 = new DataTable();
-            MySqlDataAdapter dataadap = new MySqlDataAdapter(cmd);
-            dataadap.Fill(dta1);
-            dataGridView1.ItemsSource = dta1.DefaultView;
-            connection.Close();
+            //string s = "SELECT marka,kurs,data FROM cars";
+            //connection.Open();
+            //MySqlCommand cmd = connection.CreateCommand();
+            //cmd.CommandType = CommandType.Text;
+            //cmd.CommandText = s;
+            //cmd.ExecuteNonQuery();
+            //DataTable dta1 = new DataTable();
+            //MySqlDataAdapter dataadap = new MySqlDataAdapter(cmd);
+            //dataadap.Fill(dta1);
+            //dataGridView1.ItemsSource = dta1.DefaultView;
+            //connection.Close();
         }
 
         private void Otpravit_Kuxne_Click(object sender, RoutedEventArgs e)
